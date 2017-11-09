@@ -14,7 +14,11 @@ public class Parcial2 {
         a.addTable("b");
         a.addTable("c");
         a.getTable("b").addColumn("lol", "esta");
-        System.out.println(a.listarColumnas());
+        
+        for(int i = 0; i < a.listarColumnas().size(); i++){
+            System.out.println(a.listarColumnas());
+        }
+        //System.out.println(a.forEach(listarColumnas()));
         a.getTable("b").addForeingKey("asdasd", "asdasdasd", a.getTable("c"));
         System.out.println(a.listarTablas());
     }

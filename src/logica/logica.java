@@ -23,6 +23,8 @@ public class logica {
             cadena = lectura.next().trim();
             System.out.println(cadena);
         }
+        lectura.close();
+        
     }
 
     public void leerKey(String nomArch) throws FileNotFoundException {
