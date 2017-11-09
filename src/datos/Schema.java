@@ -42,4 +42,9 @@ public class Schema {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Schema{" + "name=" + name + ", tables=" + tables + '}';
+    }
 }
